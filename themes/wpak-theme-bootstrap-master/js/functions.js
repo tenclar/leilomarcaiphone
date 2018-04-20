@@ -254,6 +254,21 @@ define(
 		return history_action;
 	});
 
+	// iOS back button support
+	//if ( App.getBackButtonDisplay() ) {
+			
+   		// Display iOS back button
+   	//	$("#back-button").css("display","block");
+   	//	$("#menu-button").css("display","none");
+		
+	//} else {
+			
+    	// Display the menu button as iOS back button is not supported
+    //	$("#back-button").css("display","none");
+    //	$("#menu-button").css("display","block");
+
+	//}
+
 	/*App.filter( 'transition-direction', function ( direction, current_screen, queried_screen ) {
 		
 		if ( current_screen.item_id === 'home' && queried_screen.screen_type === 'list' ) {
