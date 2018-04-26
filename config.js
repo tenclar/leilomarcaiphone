@@ -9,7 +9,7 @@ define( function ( require ) {
 		theme : 'wpak-theme-bootstrap-master',
 		version : '1.0',
 		app_type : 'phonegap-build',
-		app_title : 'Leilo Marca Leilões Rurais',
+		app_title : 'Leilo Marca',
 		app_platform : 'ios',
 		app_path: '',
 		gmt_offset : -5,
