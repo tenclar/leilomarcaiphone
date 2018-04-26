@@ -49,19 +49,19 @@
 	<icon src="themes/wpak-theme-bootstrap-master/res/icons/ios/icon-small.png" gap:platform="ios" width="29" height="29"/>
 
 
-	<gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default~iphone.png" width="320" height="480"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default@2x~iphone.png" width="640" height="960"/>
+	<gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default~iphone.png" gap:platform="ios" width="320" height="480"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default@2x~iphone.png" gap:platform="ios" width="640" height="960"/>
  
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Portrait~ipad.png" gap:platform="ios" width="768" height="1024"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Portrait@2x~ipad.png" gap:platform="ios" width="1536" height="2048"/>
  
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape~ipad.png" gap:platform="ios" width="1024" height="768"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape@2x~ipad.png" gap:platform="ios" width="2048" height="1536"/>
     
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-667h.png" width="750" height="1334"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-736h.png" width="1242" height="2208"/>
-    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape-736h.png" width="2208" height="1242"/>	
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-568h@2x~iphone.png" gap:platform="ios" width="640" height="1136"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-667h.png" gap:platform="ios" width="750" height="1334"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-736h.png" gap:platform="ios" width="1242" height="2208"/>
+    <gab:splash src="themes/wpak-theme-bootstrap-master/res/splashscreens/ios/Default-Landscape-736h.png" gap:platform="ios" width="2208" height="1242"/>	
 
     
 
