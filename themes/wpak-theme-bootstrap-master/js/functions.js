@@ -13,6 +13,7 @@ define(
 
 	var $refresh_button = $( '#refresh-button' );
 	var current_search = { search_principal: '' , search_secundario:''  };
+         
     var photoswipe_element = $( '.pswp' )[0]; //Memorize PhotoSwipe gallery HTML layout element
     var photoswipe_instance = null; //PhotoSwipe JS Object that we will instanciate         
     var img_dragging = false;
@@ -34,7 +35,7 @@ define(
             var $image = $( this );
 
             //Retrieve image caption if any:
-            var $caption = $( this ).closest('.gallery-item,.wp-caption').find( '.wp-caption-text' );
+            var $caption = $( this ).closest('.gallery-item, .wp-caption').find( '.wp-caption-text' );
 
             //Add PhotoSwipe item corresponding to
             photoswipe_items.push({
@@ -61,7 +62,7 @@ define(
          
      $( "#container" ).on( "touchstart", "#single-content img", function() {
         img_dragging = false; //Reinit image dragging when starting to touch an image
-    } );
+        });
 
     $( "#container" ).on( "touchmove", "#single-content img", function() {
         img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
