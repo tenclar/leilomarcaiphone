@@ -59,15 +59,15 @@ define(
          
          
          
-     $( "#container" ).on( "touchstart", ".single-content img", function() {
+     $( "#container" ).on( "touchstart", "#single-content img", function() {
         img_dragging = false; //Reinit image dragging when starting to touch an image
     } );
 
-    $( "#container" ).on( "touchmove", ".single-content img", function() {
+    $( "#container" ).on( "touchmove", "#single-content img", function() {
         img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
     });
          
-    $( "#container" ).on( "touchend", ".single-content img", function() {
+    $( "#container" ).on( "touchend", "#single-content img", function() {
 	    
         if (img_dragging){
             return;
