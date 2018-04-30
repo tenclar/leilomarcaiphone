@@ -17,11 +17,11 @@ define(
     var photoswipe_instance = null; //PhotoSwipe JS Object that we will instanciate         
     var img_dragging = false;
  
-    $( "#app-layout" ).on( "touchstart", ".single-content img", function() {
+    $( "#container" ).on( "touchstart", ".single-content img", function() {
         img_dragging = false; //Reinit image dragging when starting to touch an image
     } );
 
-    $( "#app-layout" ).on( "touchmove", ".single-content img", function() {
+    $( "#container" ).on( "touchmove", ".single-content img", function() {
         img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
     });
          
@@ -63,7 +63,7 @@ define(
         photoswipe_instance.init();
     }     
          
-    $( "#app-layout" ).on( "touchend", ".single-content img", function() {
+    $( "#container" ).on( "touchend", ".single-content img", function() {
 	    if (img_dragging){
             return;
         }
