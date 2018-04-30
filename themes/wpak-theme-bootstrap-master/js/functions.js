@@ -17,13 +17,7 @@ define(
     var photoswipe_instance = null; //PhotoSwipe JS Object that we will instanciate         
     var img_dragging = false;
  
-    $( "#container" ).on( "touchstart", ".single-content img", function() {
-        img_dragging = false; //Reinit image dragging when starting to touch an image
-    } );
-
-    $( "#container" ).on( "touchmove", ".single-content img", function() {
-        img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
-    });
+   
          
     /*     
      * Opens the given image (or list of images) with PhotoSwipe
@@ -63,8 +57,19 @@ define(
         photoswipe_instance.init();
     }     
          
+         
+         
+     $( "#container" ).on( "touchstart", ".single-content img", function() {
+        img_dragging = false; //Reinit image dragging when starting to touch an image
+    } );
+
+    $( "#container" ).on( "touchmove", ".single-content img", function() {
+        img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
+    });
+         
     $( "#container" ).on( "touchend", ".single-content img", function() {
-	    if (img_dragging){
+	    
+        if (img_dragging){
             return;
         }
         
