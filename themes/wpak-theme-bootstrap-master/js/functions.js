@@ -77,6 +77,7 @@ define(
 	   open_with_photoswipe( $( this ) );
     });
 
+         
 	$('#container').on('click','#ag-corte',function(e){
     e.preventDefault();
     //Set search params from HTML form:
