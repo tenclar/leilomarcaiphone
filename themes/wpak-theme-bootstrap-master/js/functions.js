@@ -60,15 +60,15 @@ define(
          
          
          
-     $( "#container" ).on( "touchstart", "#single-content img", function() {
+     $( "#app-layout" ).on( "touchstart", "#single-content img", function() {
         img_dragging = false; //Reinit image dragging when starting to touch an image
         });
 
-    $( "#container" ).on( "touchmove", "#single-content img", function() {
+    $( "#app-layout" ).on( "touchmove", "#single-content img", function() {
         img_dragging = true; //Activate image dragging when starting to swipe on the image to make post content scroll
     });
          
-    $( "#container" ).on( "touchend", "#single-content img", function() {
+    $( "#app-layout" ).on( "touchend", "#single-content img", function() {
 	    
         if (img_dragging){
             return;
@@ -78,7 +78,19 @@ define(
 	   open_with_photoswipe( $( this ) );
     });
 
-         
+
+	 /*
+     * @desc Display default image if an error occured when loading an image element (eg. offline)
+     * 1. Binding onerror event doesn't seem to work properly in functions.js
+     * 2. Binding is done directly on image elements
+     * 3. You can't use UnderscoreJS tags directly in WordPress content. So we have to attach an event to window.
+     * 4. Content image onerror handlers are set in prepare-content.php
+     * 5. Thumbnail event handlers are done in the templates archive.html and single.html
+     */
+    window.displayDefaultImage = function(o) {
+        $(o).attr('src',TemplateTags.getThemeAssetUrl('img/img-icon.svg'));
+    }
+
 	$('#container').on('click','#ag-corte',function(e){
     e.preventDefault();
     //Set search params from HTML form:
