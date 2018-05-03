@@ -46,7 +46,9 @@ function search_component_query( $query_args, $component ) {
 		//Note: As of WP-AppKit 0.6, if you want to keep WP Search ordering, you can use the 
 		//'use-standard-pagination' filter on app side (which will switch back to standard WP pagination),
 		//and comment the following line.
-		$query_args[ 'orderby' ] = 'date';
+		//$query_args[ 'orderby' ] = 'date';
+		$query_args['orderby'] = 'ai1ec_event_date';
+		$query_args['order'] = 'DESC';
 		
 	}
 	return $query_args;
