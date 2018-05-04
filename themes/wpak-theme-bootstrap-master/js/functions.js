@@ -373,8 +373,8 @@ define(
 	$( '#container' ).on( 'click', '#linkaovivo a', function( e ) {
 		e.preventDefault();
 		
-		openWithInAppBrowser( 'https://www.youtube.com/embed/_W-AC-T7HuQ' );
-		//openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
+		//openWithInAppBrowser( 'https://www.youtube.com/embed/_W-AC-T7HuQ' );
+		openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
 
 	} );
 

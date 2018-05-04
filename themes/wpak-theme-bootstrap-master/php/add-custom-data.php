@@ -8,8 +8,8 @@
 function wpak_add_custom_data( $post_data, $post, $component ) {
     
      $post_data['table_resultados_macho'] = get_field( 'resultados_macho' );
-     $post_data['table_resultados_femea'] = get_field( 'resultados_femea' );
-
+     $post_data['table_resultados_femea'] = get_field( 'resultados_femea' );     
+     $post_data['ai1ec_event_datetime'] = get_post_meta($post->ID, 'ai1ec_event_datetime', true);
 
     // Add subhead. Expected as a post custom field.
     // Usage in app's templates: <%= post.subhead %>

@@ -8,12 +8,15 @@
 
 
 function search_component_query( $query_args, $component ) {
+    $query_args['post_type'] = 'ai1ec_event';
 	$my_search_filters = WpakWebServiceContext::getClientAppParam( 'my_search_filters' );
 	if ( !empty( $my_search_filters ) ) {
 
 		if ( !empty( $my_search_filters[ 'search_principal' ] ) && empty($my_search_filters[ 'search_secundario' ] )  ) {
 			//$query_args[ 's' ] = $my_search_filters[ 'search_string' ];
+            
 			$query_args[ 'tax_query' ] = array(
+											
 												array(
 														'taxonomy' => 'events_categories',
 														'field'    => 'slug',
@@ -25,6 +28,7 @@ function search_component_query( $query_args, $component ) {
 			if ( !empty( $my_search_filters[ 'search_principal' ] ) && !empty( $my_search_filters[ 'search_secundario' ] ) ) {	
 
 			$query_args[ 'tax_query' ] = array(
+											
 												array(
 														'taxonomy' => 'events_categories',
 														'field'    => 'slug',
@@ -46,8 +50,8 @@ function search_component_query( $query_args, $component ) {
 		//Note: As of WP-AppKit 0.6, if you want to keep WP Search ordering, you can use the 
 		//'use-standard-pagination' filter on app side (which will switch back to standard WP pagination),
 		//and comment the following line.
-		//$query_args[ 'orderby' ] = 'date';
-		$query_args['orderby'] = 'ai1ec_event_date';
+		$query_args[ 'orderby' ] = 'date';
+		//$query_args['orderby'] = 'start';
 		$query_args['order'] = 'DESC';
 		
 	}
