@@ -150,7 +150,7 @@ define(
 
 	});
 
-	$('#container').on('click','#agenda',function(e){
+	$('#app-layout').on('click','#agenda',function(e){
     e.preventDefault();
     //Set search params from HTML form:
     //current_search.search_string = $('#corte').val().trim();
@@ -227,7 +227,7 @@ define(
 
 	});
 
-	$('#container').on('click','#resultados',function(e){
+	$('#app-layout').on('click','#resultados',function(e){
     e.preventDefault();
     //Set search params from HTML form:
     //current_search.search_string = $('#corte').val().trim();
@@ -370,12 +370,9 @@ define(
 	/**
 	 * Open all links inside single content with the inAppBrowser
 	 */
-	$( '#container' ).on( 'click', '#linkaovivo a', function( e ) {
-		e.preventDefault();
-		
-		openWithInAppBrowser( 'https://www.youtube.com/embed/_W-AC-T7HuQ' );
-		//openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
-
+	$( '#app-layout' ).on( 'click', '#linkaovivo a', function( e ) {
+		e.preventDefault();			
+		openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
 	} );
 
 	/**
@@ -413,9 +410,9 @@ define(
 		Storage.clear( 'scroll-pos' );
 		$refresh_button.removeClass( 'refreshing' );
 		if ( result.ok ) {
-			//$( '#feedback' ).removeClass( 'error' ).html( 'Conteudo atualizado com Sucesso!' ).slideDown();
+			$( '#feedback' ).removeClass( 'error' ).html( 'Conteudo atualizado com Sucesso!' ).slideDown();
 		} else {
-			//$( '#feedback' ).addClass( 'error' ).html( result.message ).slideDown();
+			$( '#feedback' ).addClass( 'error' ).html( result.message ).slideDown();
 		}
 	} );
 
@@ -423,14 +420,14 @@ define(
 	 * When an error occurs, display it in the feedback box
 	 */
 	App.on( 'error', function( error ) {
-		//$( '#feedback' ).addClass( 'error' ).html( error.message ).slideDown();
+		$( '#feedback' ).addClass( 'error' ).html( error.message ).slideDown();
 	} );
 
 	/**
 	 * Hide the feedback box when clicking anywhere in the body
 	 */
 	$( 'body' ).click( function( e ) {
-		//$( '#feedback' ).slideUp();
+		$( '#feedback' ).slideUp();
 	} );
 
 	/**

@@ -97,11 +97,12 @@ a#refresh-button.refreshing {
 }
 
 #feedback{
-	padding:1em;
+	/* padding:1em; */
 	/*background:#ff ff e0;*/
 	background:#F8F8FF;
 	text-align:center;
-	margin: 0 0 2em;
+	font-size:8px;
+	/* margin: 0 0 2em; */
 }
 
 #feedback.error{
@@ -145,7 +146,7 @@ ol.breadcrumb{
     width: 33.3%;
     height: 100px;
     padding: 10px;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 1.6;
     text-align: center;
     background-color: #f9f9f9;

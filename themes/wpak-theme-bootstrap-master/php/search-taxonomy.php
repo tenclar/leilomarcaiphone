@@ -47,8 +47,10 @@ function search_component_query( $query_args, $component ) {
 		//'use-standard-pagination' filter on app side (which will switch back to standard WP pagination),
 		//and comment the following line.
 		//$query_args[ 'orderby' ] = 'date';
-		$query_args['orderby'] = 'ai1ec_event_date';
-		$query_args['order'] = 'DESC';
+		
+	    $query_args[ 'meta_key' ] = 'ai1ec_start';
+	    $query_args[ 'orderby' ] = 'meta_value';		
+		$query_args['order'] = 'ASC';
 		
 	}
 	return $query_args;
