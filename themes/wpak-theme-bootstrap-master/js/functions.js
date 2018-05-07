@@ -370,18 +370,13 @@ define(
 	/**
 	 * Open all links inside single content with the inAppBrowser
 	 */
-<<<<<<< HEAD
+
+
+	 
 	$( '#app-layout' ).on( 'click', '#linkaovivo a', function( e ) {
 		e.preventDefault();			
 		openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
-=======
-	$( '#container' ).on( 'click', '#linkaovivo a', function( e ) {
-		e.preventDefault();
-		
-		//openWithInAppBrowser( 'https://www.youtube.com/embed/_W-AC-T7HuQ' );
-		openWithInAppBrowser( 'https://www.youtube.com/channel/UCd68n27RpAW2MXXvAAS6Mvw/live' );
-
->>>>>>> e4344cf0925177ad8e9bc0d10fc4e090268c9247
+	
 	} );
 
 	/**
