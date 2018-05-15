@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "br.com.leilomarca.phonegapapp"
         versionCode = ""
-        version     = "1.1.1" >
+        version     = "1.1.2" >
 
 	<name>Leilo Marca</name>
 

@@ -7,7 +7,7 @@ define( function ( require ) {
 		wp_ws_url : 'http://www.leilomarca.com.br/portal/wp-appkit-api/app-iphone',
 		wp_url : 'http://www.leilomarca.com.br/portal',
 		theme : 'wpak-theme-bootstrap-master',
-		version : '1.0',
+		version : '1.1.2',
 		app_type : 'phonegap-build',
 		app_title : 'Leilo Marca',
 		app_platform : 'ios',
